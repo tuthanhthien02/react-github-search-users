@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
 :root {
     /* dark shades of primary color*/
     --clr-primary-1: hsl(185, 91%, 17%);
@@ -124,4 +125,21 @@ main {
 .btn:hover {
     background: var(--clr-primary-8);
     color: var(--clr-primary-1);
+}
+
+.section {
+    padding: 1rem 0;
+    position: relative;
+}
+
+.section-center {
+    width: 90vw;
+    margin: 0 auto;
+    min-width: 1170px;
+}
+
+@media screen and (min-width: 992px) {
+    .section-center {
+        width: 95vw;
+    }
 }
