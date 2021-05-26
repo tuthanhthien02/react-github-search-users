@@ -1,28 +1,27 @@
 import React from "react";
-const img =
-    "https://lh3.googleusercontent.com/a-/AOh14GgZYADxXS-HgyHaQGCDFdfhwirz6ifWzIbDYysn=s96-c";
+import { GithubContext, useGlobalContext } from "../context/context";
 
 const Followers = () => {
+    const { followers } = useGlobalContext();
+
     return (
         <div className="user__followers">
             <div className="user__followers-wrapper">
-                <FollowerItem />
-                <FollowerItem />
-                <FollowerItem />
-                <FollowerItem />
-                <FollowerItem />
+                {followers.map((follower, index) => {
+                    return <FollowerItem key={index} {...follower} />;
+                })}
             </div>
         </div>
     );
 };
 
-const FollowerItem = () => {
+const FollowerItem = ({ avatar_url, html_url, login }) => {
     return (
         <article>
-            <img src={img} alt="" />
+            <img src={avatar_url} alt={login} />
             <div>
-                <h4>follower</h4>
-                <a href="">link to follower</a>
+                <h4>{login}</h4>
+                <a href={html_url}>{html_url}</a>
             </div>
         </article>
     );
