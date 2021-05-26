@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Info, Search, User, Followers } from "../components";
+import { Navbar, Info, Search, User, Repos } from "../components";
 
 const Dashboard = () => {
     return (
@@ -8,6 +8,7 @@ const Dashboard = () => {
             <Search />
             <Info />
             <User />
+            <Repos />
         </main>
     );
 };

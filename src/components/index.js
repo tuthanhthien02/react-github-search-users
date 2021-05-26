@@ -1,7 +1,7 @@
+import Navbar from "./Navbar";
 import Search from "./Search";
 import Info from "./Info";
 import User from "./User";
-import Followers from "./Followers";
-import Navbar from "./Navbar";
+import Repos from "./Repos";
 
-export { Info, Search, User, Followers, Navbar };
+export { Info, Search, User, Navbar, Repos };
