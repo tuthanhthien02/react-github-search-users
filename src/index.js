@@ -5,6 +5,8 @@ import "./sass/index.scss";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { GithubProvider } from "./context/context";
+// dev-s0ctp7wp.us.auth0.com
+// BJwTJVWXp5fsCVUnFDMUO1nTDFdzBBgh
 
 ReactDOM.render(
     <React.StrictMode>
