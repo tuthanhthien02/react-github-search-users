@@ -10,7 +10,6 @@ const Navbar = () => {
     const isUser = isAuthenticated && user;
     const navEl = useRef(null);
 
-
     return (
         <nav className="nav" ref={navEl}>
             {isUser && user.picture && (
