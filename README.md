@@ -1,6 +1,6 @@
 # GitHub Search User
 
-### GitHub Search User using react and GitHub API.
+### GitHub Search User using ReactJS and GitHub API.
 
 ![](/public/screenshot.png)
 
